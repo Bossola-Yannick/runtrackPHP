@@ -11,6 +11,6 @@ function isPrime($number)
 
 for ($i = 3; $i < 100; $i++) {
     if (isPrime($i)) {
-        echo $i . " est un nombre primaire<br>";
+        echo $i . " est un nombre premier<br>";
     }
 }
