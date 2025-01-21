@@ -1,0 +1,14 @@
+input {
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+.morpion {
+  width: 60%;
+  margin: 3rem auto;
+}
+.center {
+  text-align: center;
+  margin: 0.5rem;
+}
