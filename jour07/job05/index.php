@@ -3,6 +3,11 @@ session_start();
 $game = 'game';
 $myGame = [];
 $turn = "-";
+$case = array_keys($_POST);
+var_dump($case);
+var_dump($_POST);
+echo $case[0];
+$turn = $_POST[$case[0]];
 if (!isset($_SESSION[$game])) {
     $_SESSION[$game] = $myGame;
 };
@@ -42,23 +47,23 @@ var_dump($_SESSION);
     <div class="morpion">
         <div class="line1 center">
             <form action="index.php" method="post">
-                <input type="submit" value="-" name="game">
-                <input type="submit" value="-" name="game">
-                <input type="submit" value="-" name="game">
+                <input type="submit" value="-" name="one">
+                <input type="submit" value="-" name="two">
+                <input type="submit" value="-" name="three">
             </form>
         </div>
         <div class="line2 center">
             <form action="index.php" method="post">
-                <input type="submit" value="-" name="game">
-                <input type="submit" value="-" name="game">
-                <input type="submit" value="-" name="game">
+                <input type="submit" value="-" name="four">
+                <input type="submit" value="-" name="five">
+                <input type="submit" value="-" name="six">
             </form>
         </div>
         <div class="line3 center">
             <form action="index.php" method="post">
-                <input type="submit" value="-" name="game">
-                <input type="submit" value="-" name="game">
-                <input type="submit" value="-" name="game">
+                <input type="submit" value="-" name="seven">
+                <input type="submit" value="-" name="height">
+                <input type="submit" value="-" name="nine">
             </form>
         </div>
     </div>

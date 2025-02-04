@@ -16,7 +16,13 @@ INNER JOIN etage ON salle.id_etage = etage.id";
 $stmt = $bdd->prepare($sql);
 $stmt->execute();
 $salles = $stmt->fetchAll(PDO::FETCH_ASSOC);
-var_dump($salles);
+// var_dump($salles);
+// $date = new DateTime();
+// echo $date->format("d/m/y");
+// var_dump($date);
+var_dump($_SERVER['REQUEST_URI']);
+$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+echo $uri;
 ?>
 <!DOCTYPE html>
 <html lang="en">
